@@ -10,6 +10,7 @@ module.exports = {
   module: {
     loaders: [{
       exclude: /node_modules/,
+      devtool: 'inline-source-map',
       loader: 'babel',
       query: {
         presets: ['react', 'es2015', 'stage-1']
@@ -22,5 +23,6 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+  
 };
